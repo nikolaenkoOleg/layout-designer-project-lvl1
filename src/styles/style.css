@@ -56,7 +56,6 @@ a {
 }
 
 .main {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
 }
@@ -93,4 +92,64 @@ a {
   border: 2px solid #303846;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.vantages {
+  display: flex;
+  justify-content: center;
+}
+
+.vantages__wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  width: 1000px;
+}
+
+.vantages__card {
+  padding: 60px 0 60px 0;
+  width: 30%;
+}
+
+.vantages__title {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.vantages__description {
+  font-size: 18px;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about_grey {
+  background-color: #f7f7f7;
+}
+
+.about_reverse {
+  flex-direction: row-reverse;
+}
+
+.about__card {
+  padding: 60px 0 60px 0;
+}
+
+.about__title {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.about__description {
+  font-size: 18px;
+
+  width: 45%;
+  margin-bottom: 20px;
+}
+
+.about__description:last-child {
+  margin-bottom: 0;
 }
