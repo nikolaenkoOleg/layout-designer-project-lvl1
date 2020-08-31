@@ -12,6 +12,10 @@ h2 {
   margin-bottom: 0.5em;
 }
 
+a {
+  text-decoration: none;
+}
+
 .content {
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
@@ -28,20 +32,65 @@ h2 {
 }
 
 .header {
-  position: fixed;
-  border: 1px solid red;
+  position: sticky;
 
   height: 50px;
-  width: 100vw;
   padding: 5px 20px 5px 20px;
 
   background-color: #fff;
 }
 
+.logo__title {
+  font-weight: bold;
+  font-size: 25px;
+}
+
 .nav__list-item {
+  font-weight: bold;
+
   margin-right: 20px;
 }
 
 .nav__list-item:last-child {
   margin-right: 0;
+}
+
+.main {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+}
+
+.main__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 1000px;
+  padding: 60px 0 60px 0;
+}
+
+.main__title {
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.main__tagline {
+  font-weight: bold;
+  font-size: 18px;
+
+  margin-top: 30px;
+}
+
+.main__link {
+  font-size: 1em;
+  font-weight: bold;
+
+  margin-top: 50px;
+  padding: 10px;
+  
+  border: 2px solid #303846;
+  border-radius: 10px;
+  cursor: pointer;
 }
