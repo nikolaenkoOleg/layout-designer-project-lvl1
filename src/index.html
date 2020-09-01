@@ -12,28 +12,30 @@
 </head>
 
 <body>
-  <header class="flex-container header">
-    <div class="logo flex-container">
-      <img class="logo__img" alt="logo"></img>
+  <header class="header">
+    <div class="logo">
+      <img src="images/logo.svg" class="logo__img" alt="logo"></img>
       <h2 class="logo__title content">Лунное море</h2>
     </div>
     <nav class="nav">
-      <ul class="nav__list flex-container">
-        <li class="nav__list-item content">Приемущества</li>
-        <li class="nav__list-item content">О ЖК "Лунное Море"</li>
-        <li class="nav__list-item content">Места для отдыха</li>
+      <ul class="nav__list">
+        <li class="nav__list-item"><a href="#" class="nav__list-link content">Приемущества</a></li>
+        <li class="nav__list-item"><a href="#" class="nav__list-link content">О ЖК "Лунное Море"</a></li>
+        <li class="nav__list-item"><a href="#" class="nav__list-link content">Места для отдыха</a></li>
       </ul>
     </nav>
   </header>
   <main>
+
     <section class="main">
       <div class="main__wrapper">
-        <img class="main__img" alt="logo"></img>
+        <img src="images/logo.svg" class="main__img" alt="logo"></img>
         <h1 class="main__title content">ЖК «Лунное море»</h1>
         <p class="main__tagline content">Место, откуда не хочется улетать</p>
         <a href="#" class="main__link content">Забронировать</a>
       </div>
     </section>
+
     <section class="vantages">
       <div class="vantages__wrapper">
         <div class="vantages__card">
@@ -58,30 +60,35 @@
         </div>    
       </div>
     </section>
+
     <section class="about about_grey">
-      <div class="about__card">
-        <h2 class="about__title content">О ЖК «Лунное море»</h2>
-        <p class="about__description content">
-          Все чаще жители Москвы предпочитают загородный дом городской квартире, к тому же связь с мегаполисом не теряется – современные скоростные трассы позволяют без труда добираться до столицы и обратно.
-        </p>
-        <p class="about__description content">
-          Мы построили наши дома на самом близком к Солнцу спутнике, всего в 380 тысяч километров от Земли.
-        </p>
+      <div class="about__wrapper">
+        <div class="about__card">
+          <h2 class="about__title content">О ЖК «Лунное море»</h2>
+          <p class="about__description content">
+            Все чаще жители Москвы предпочитают загородный дом городской квартире, к тому же связь с мегаполисом не теряется – современные скоростные трассы позволяют без труда добираться до столицы и обратно.
+          </p>
+          <p class="about__description content">
+            Мы построили наши дома на самом близком к Солнцу спутнике, всего в 380 тысяч километров от Земли.
+          </p>
+        </div>
+        <img src="images/moon-1.jpg" alt="about-img1" class="about__img">
       </div>
-      <img src="#" alt="about-img1" class="about__img">
     </section>
         
-    <section class="about about_reverse">
-      <div class="about__card">
-        <h2 class="about__title content">Места для отдыха</h2>
-        <p class="about__description content">
-          Луна обладает всеми условиями для комфортного отдыха от большого города. В вашем распоряжении 22 моря и 18 гор. Самое ближайшее кольцо гор всего в 200 километров от вашей квартиры.
-        </p>
-        <p class="about__description content">
-          Дома располагаются в новом районе «Лунные моря». При необходимости есть автобусы до района «Лунный материк».
-        </p>
-      </div>    
-      <img src="#" alt="about-img2" class="about__img">
+    <section class="about">
+      <div class="about__wrapper about__wrapper_reverse">
+        <div class="about__card">
+          <h2 class="about__title content">Места для отдыха</h2>
+          <p class="about__description content">
+            Луна обладает всеми условиями для комфортного отдыха от большого города. В вашем распоряжении 22 моря и 18 гор. Самое ближайшее кольцо гор всего в 200 километров от вашей квартиры.
+          </p>
+          <p class="about__description content">
+            Дома располагаются в новом районе «Лунные моря». При необходимости есть автобусы до района «Лунный материк».
+          </p>
+        </div>    
+        <img src="images/moon-2.jpg" alt="about-img2" class="about__img">
+      </div>
     </section>
   </main>
   <footer>
