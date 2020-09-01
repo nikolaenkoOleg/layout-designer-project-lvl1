@@ -32,7 +32,7 @@
         <img src="images/logo.svg" class="main__img" alt="logo"></img>
         <h1 class="main__title content">ЖК «Лунное море»</h1>
         <p class="main__tagline content">Место, откуда не хочется улетать</p>
-        <a href="#" class="main__link content">Забронировать</a>
+        <a href="form" class="main__link content">Забронировать</a>
       </div>
     </section>
 
@@ -88,6 +88,55 @@
           </p>
         </div>    
         <img src="images/moon-2.jpg" alt="about-img2" class="about__img">
+      </div>
+    </section>
+
+    <section class="form-section">
+      <div class="form-section__wrapper">
+        <h2 class="form__title content">Оставьте заявку уже сегодня!</h2>
+        <form class="form" id="form">
+          <fieldset class="form__set">
+            <legend class="form__legend content">Параметры квартиры</legend>
+            
+            <div class="form__group">
+              <label class="form__label content" for="rooms">Количество комнат</label>
+              <select name="rooms" id="rooms" class="form__selector content">
+                <option class="form__decoration-option content" value="1" selected>1</option>
+                <option class="form__decoration-option content" value="2">2</option>
+                <option class="form__decoration-option content" value="3">3</option>
+              </select>
+            </div>
+
+            <div class="form__group">
+              <label class="form__label content" for="decor">Отделка</label>
+              <select name="decor" id="decor" class="form__selector content">
+                <option class="form__decoration-option content" value="noDecorated" selected>Без отделки</option>
+                <option class="form__decoration-option content" value="withDecorated">С отделкой</option>
+                <option class="form__decoration-option content" value="evro">Евро</option>
+              </select>
+            </div>
+            
+          </fieldset>
+          <fieldset class="form__set">
+            <legend class="form__legend content">Контактная инфомация</legend>
+
+            <div class="form__group">
+              <label for="name" class="form__label content">Имя:</label>
+              <input type="text" class="form__input content" id="name">
+            </div>
+
+            <div class="form__group">
+              <label for="phone" class="form__label content">Телефон:</label>
+              <input type="text" class="form__input content" id="phone">
+            </div>
+
+            <div class="form__group">
+              <label for="email" class="form__label content">E-mail:</label>
+              <input type="text" class="form__input content" id="email">
+            </div>
+          </fieldset>
+          <input type="submit" class="form__submit">
+        </form>
       </div>
     </section>
   </main>

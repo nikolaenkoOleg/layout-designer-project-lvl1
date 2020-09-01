@@ -186,3 +186,93 @@ a {
 .about__img {
   width: 30%;
 }
+
+.form-section {
+  display: flex;
+  justify-content: center;
+
+  padding: 60px 0 60px 0;
+
+  background-color: #f7f7f7;
+}
+
+.form-section__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 1000px;
+}
+
+
+.form__title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+
+  margin-bottom: 10px;
+}
+
+.form {
+  width: 50%;
+}
+
+.form__set {
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px;
+  margin-bottom: 10px;
+
+  border: 2px solid #09d3ac;
+}
+
+.form__legend {
+  font-weight: bold;
+  font-size: 22px;
+  color: #09d3ac;
+}
+
+.form__group {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 20px;
+}
+
+.form__label {
+  font-weight: bold;
+}
+
+.form__input {
+  border-radius: 10px;
+  border: 1px solid #999999;
+
+  padding: 5px;
+}
+
+.form__selector {
+  width: 207px;
+
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid #999999;
+  
+  background-color: #fff;
+}
+
+.form__submit {
+  font-size: 1em;
+  font-weight: bold;
+  color: #09d3ac;
+
+  width: 160px;
+
+  margin-top: 10px;
+  padding: 10px;
+
+  border: 2px solid #09d3ac;
+  border-radius: 10px;
+
+  cursor: pointer;
+}
