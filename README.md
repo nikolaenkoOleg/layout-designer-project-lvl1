@@ -21,5 +21,5 @@ make lint
 ## URL
 
 ```sh
-http://untidy-move.surge.sh/
+http://tiresome-parcel.surge.sh/
 ```
