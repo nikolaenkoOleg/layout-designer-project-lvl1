@@ -12,24 +12,158 @@
 </head>
 
 <body>
-  <header class="flex-container header">
-    <div class="logo flex-container">
-      <img class="logo__img" alt="Логотип"></img>
-      <h2 class="logo__title">Лунное море</h2>
+  <header class="header fl-c">
+    <div class="fl-c">
+      <img src="images/logo.svg" class="logo-img" alt="logo">
+      <p class="logo-title">Лунное море</p>
     </div>
-    <nav class="nav">
-      <ul class="nav__list flex-container">
-        <li class="nav__list-item content">Приемущества</li>
-        <li class="nav__list-item content">О ЖК "Лунное Море"</li>
-        <li class="nav__list-item content">Места для отдыха</li>
+    <nav>
+      <ul class="fl-c">
+        <li class="nav-item"><a href="#vantages">Приемущества</a></li>
+        <li class="nav-item"><a href="#about">О ЖК "Лунное Море"</a></li>
+        <li class="nav-item"><a href="#places">Места для отдыха</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <p>Главный контент</p>
+
+    <section class="main fl-c">
+      <div class="fl-c column wrapper p60">
+        <img src="images/logo.svg" class="banner-block-img" alt="logo">
+        <h1 class="banner-block-title h1">ЖК «Лунное море»</h1>
+        <p class="banner-block-tagline">Место, откуда не хочется улетать</p>
+        <a href="#form" class="btn banner-link">Забронировать</a>
+      </div>
+    </section>
+
+    <section class="fl-c" id="vantages">
+      <div class="fl-c wrapper vantages">
+        <div class="vantages-card p60">
+          <h2 class="title h2">Уникальный вид</h2>
+          <p class="vantages-description">
+            Вид на космос из вашего окна. Мы построили дома с большими окнами, чтобы вы могли наслаждаться метеоритными потоками.
+          </p>
+        </div>
+
+        <div class="vantages-card p60">
+          <h2 class="title">Инфраструктура</h2>
+          <p class="vantages-description">
+            Прекрасные дороги рядом с домом. Много мест для прогулки. Всего в 200 км. от посёлка находится кольцо гор Кордильеры, на которых вы сможете провести незабываемые выходные.
+          </p>
+        </div>  
+
+        <div class="vantages-card p60">
+          <h2 class="title">Близость к Москве</h2>
+          <p class="vantages-description">
+            При небольшой цене мы располагаемся близко к МКАД. Всего 384 000 километров и вы в самом сердце России.
+          </p>
+        </div>    
+      </div>
+    </section>
+
+    <section class="fl-c p60 bg-grey" id="about">
+      <div class="fl-c sa wrapper">
+        <div class="about-card">
+          <h2 class="title">О ЖК «Лунное море»</h2>
+          <p class="about-description">
+            Все чаще жители Москвы предпочитают загородный дом городской квартире, к тому же связь с мегаполисом не теряется – современные скоростные трассы позволяют без труда добираться до столицы и обратно.
+          </p>
+          <p class="about-description">
+            Мы построили наши дома на самом близком к Солнцу спутнике, всего в 380 тысяч километров от Земли.
+          </p>
+        </div>
+        <img src="images/moon-1.jpg" alt="about-img1" class="about-img">
+      </div>
+    </section>
+        
+    <section class="fl-c p60" id="places">
+      <div class="fl-c sa wrapper reverse">
+        <div class="about-card">
+          <h2 class="title">Места для отдыха</h2>
+          <p class="about-description">
+            Луна обладает всеми условиями для комфортного отдыха от большого города. В вашем распоряжении 22 моря и 18 гор. Самое ближайшее кольцо гор всего в 200 километров от вашей квартиры.
+          </p>
+          <p class="about-description">
+            Дома располагаются в новом районе «Лунные моря». При необходимости есть автобусы до района «Лунный материк».
+          </p>
+        </div>    
+        <img src="images/moon-2.jpg" alt="about-img2" class="about-img">
+      </div>
+    </section>
+
+    <section class="fl-c p60 bg-grey">
+      <div class="fl-c column wrapper">
+        <h2 class="title form-title">Оставьте заявку уже сегодня!</h2>
+        <form class="form" id="form">
+          <fieldset class="form-set fl-c column">
+            <legend class="form-legend">Параметры квартиры</legend>
+            
+            <div class="fl-c form-group sb">
+              <label class="form__label" for="rooms">Количество комнат</label>
+              <select name="rooms" id="rooms" class="form-selector">
+                <option class="form__decoration-option" value="1" selected>1</option>
+                <option class="form__decoration-option" value="2">2</option>
+                <option class="form__decoration-option" value="3">3</option>
+              </select>
+            </div>
+
+            <div class="fl-c form-group sb">
+              <label class="form__label" for="decor">Отделка</label>
+              <select name="decor" id="decor" class="form-selector">
+                <option class="form__decoration-option" value="noDecorated" selected>Без отделки</option>
+                <option class="form__decoration-option" value="withDecorated">С отделкой</option>
+                <option class="form__decoration-option" value="evro">Евро</option>
+              </select>
+            </div>
+            
+          </fieldset>
+          <fieldset class="form-set fl-c column">
+            <legend class="form-legend">Контактная инфомация</legend>
+
+            <div class="fl-c form-group sb">
+              <label for="name" class="form__label">Имя:</label>
+              <input type="text" class="form-input" id="name">
+            </div>
+
+            <div class="fl-c form-group sb">
+              <label for="phone" class="form__label">Телефон:</label>
+              <input type="text" class="form-input" id="phone">
+            </div>
+
+            <div class="fl-c form-group sb">
+              <label for="email" class="form__label">E-mail:</label>
+              <input type="text" class="form-input" id="email">
+            </div>
+          </fieldset>
+          <input type="submit" class="btn submit" value="Отправить">
+        </form>
+      </div>
+    </section>
   </main>
-  <footer>
-    <p>Футер</p>
+  <footer class="fl-c p60 footer">
+    <div class="fl-c sb wrapper footer-wrapper">
+      <div class="fl-c sa column footer-logo-block">
+        <div class="logo">
+          <img src="images/logo.svg" class="logo-img" alt="logo">
+          <h2 class="logo-title light">Лунное море</h2>
+        </div>
+        <small class="light copy">&copy; 2032</small>
+      </div>
+      <div class="fl-c sa column">
+        <h2 class="footer-block-title">Проектная документация</h2>
+        <ul>
+          <li class="footer-list-item"><a href="#" class="light">Скачать</a></li>
+          <li class="footer-list-item"><a href="#" class="light">Посмотреть на сайте</a></li>
+        </ul>
+      </div>
+      <div class="fl-c sa column">
+        <h2 class="footer-block-title">О застройщике</h2>
+        <ul>
+          <li class="footer-list-item"><a href="#" class="light">Отзывы</a></li>
+          <li class="footer-list-item"><a href="#" class="light">Сайт компании</a></li>
+        </ul>
+      </div>
+    </div>
   </footer>
 </body>
 
