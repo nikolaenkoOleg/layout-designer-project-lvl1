@@ -16,6 +16,10 @@ h1 {
   -webkit-text-stroke: 0.3px #303846;
 }
 
+body {
+  margin-top: 60px;
+}
+
 .h2 {
   margin: 0;
 
@@ -131,8 +135,6 @@ body {
 }
 
 .main {
-  margin-top: 60px;
-
   color: #f7f7f7;
 
   background: url('../images/banner.png') 40% 40% no-repeat;
