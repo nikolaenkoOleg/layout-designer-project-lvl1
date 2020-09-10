@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <header class="header header-fixed sb">
+  <header class="header header-fixed justify-content-between">
     <div class="fl-c">
       <img src="images/logo.svg" class="logo-img" alt="Логотип">
       <p class="logo-title">Лунное море</p>
@@ -37,7 +37,7 @@
     </section>
 
     <section id="vantages">
-       <div class="wrapper sb ai-s"> <!--!! -->
+       <div class="wrapper justify-content-between align-items-start"> <!--!! -->
         <div class="w-30pr py-60">
           <h2>Уникальный вид</h2>
           <p>
@@ -61,8 +61,8 @@
       </div>
     </section>
 
-    <section class="py-60 bg-grey" id="about">
-      <div class="wrapper sa">
+    <section class="py-60 bg-light" id="about">
+      <div class="wrapper justify-content-around">
         <div class="w-45pr">
           <h2>О ЖК «Лунное море»</h2>
           <p class="mb-20">
@@ -77,7 +77,7 @@
     </section>
         
     <section class="py-60" id="places">
-      <div class="wrapper sa reverse">
+      <div class="wrapper justify-content-around reverse">
         <div class="w-45pr">
           <h2>Места для отдыха</h2>
           <p class="mb-20">
@@ -91,14 +91,14 @@
       </div>
     </section>
 
-    <section class="py-60 bg-grey">
+    <section class="py-60 bg-light">
       <div class="wrapper column">
         <h2>Оставьте заявку уже сегодня!</h2>
         <form class="w-50pr" id="form">
           <fieldset class="form-set fl-c column">
             <legend class="form-legend">Параметры квартиры</legend>
             
-            <div class="fl-c mb-20 sb">
+            <div class="d-flex justify-content-between mb-20">
               <label class="form-label" for="rooms">Количество комнат</label>
               <select name="rooms" id="rooms" class="form-selector">
                 <option value="1" selected>1</option>
@@ -107,7 +107,7 @@
               </select>
             </div>
 
-            <div class="fl-c mb-20 sb">
+            <div class="d-flex justify-content-between mb-20">
               <label class="form-label" for="decor">Отделка</label>
               <select name="decor" id="decor" class="form-selector">
                 <option value="noDecorated" selected>Без отделки</option>
@@ -120,43 +120,43 @@
           <fieldset class="form-set fl-c column">
             <legend class="form-legend">Контактная инфомация</legend>
 
-            <div class="fl-c mb-20 sb">
+            <div class="d-flex justify-content-between mb-20">
               <label for="name" class="form-label">Имя:</label>
               <input type="text" class="form-input" id="name">
             </div>
 
-            <div class="fl-c mb-20 sb">
+            <div class="d-flex justify-content-between mb-20">
               <label for="phone" class="form-label">Телефон:</label>
               <input type="text" class="form-input" id="phone">
             </div>
 
-            <div class="fl-c mb-20 sb">
+            <div class="d-flex justify-content-between mb-20">
               <label for="email" class="form-label">E-mail:</label>
               <input type="text" class="form-input" id="email">
             </div>
           </fieldset>
-          <input type="submit" class="btn btn-green w160" value="Отправить">
+          <input type="submit" class="btn btn-green w-160px" value="Отправить">
         </form>
       </div>
     </section>
   </main>
   <footer class="py-60">
-    <div class="wrapper ai-s sb">
-      <div class="fl-c sa ai-s column">
+    <div class="wrapper align-items-start justify-content-between">
+      <div class="d-flex justify-content-around align-items-start column">
         <div class="fl-c">
           <img src="images/logo.svg" class="logo-img" alt="Логотип">
           <p class="logo-title light">Лунное море</p>
         </div>
         <small class="copy light">&copy; 2032</small>
       </div>
-      <div class="fl-c sa column">
+      <div class="d-flex justify-content-around column">
         <h2 class="fz-20 light">Проектная документация</h2>
         <ul>
           <li class="footer-list-item"><a href="#" class="light">Скачать</a></li>
           <li class="footer-list-item"><a href="#" class="light">Посмотреть на сайте</a></li>
         </ul>
       </div>
-      <div class="fl-c sa column">
+      <div class="d-flex justify-content-around column">
         <h2 class="fz-20 light">О застройщике</h2>
         <ul>
           <li class="footer-list-item"><a href="#" class="light">Отзывы</a></li>
