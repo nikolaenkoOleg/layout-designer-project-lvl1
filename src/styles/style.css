@@ -46,12 +46,6 @@ body {
   line-height: 1.5em;
 }
 
-.fl-c {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .d-flex {
   display: flex;
 }
@@ -121,6 +115,10 @@ body {
 
 .align-items-start {
   align-items: start;
+}
+
+.align-items-center {
+  align-items: center;
 }
 
 .reverse {
