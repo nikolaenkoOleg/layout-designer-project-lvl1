@@ -3,8 +3,8 @@
   --dark: #303846;
   --light: #f7f7f7;
   --green: #09d3ac;
-  --white: #ffffff;
-  --grey: #999999;
+  --white: #fff;
+  --grey: #999;
 }
 
 a {
@@ -55,9 +55,9 @@ body {
   align-items: center;
   justify-content: center;
 
-  margin: 0 auto;
-
   width: 1000px;
+
+  margin: 0 auto;
 }
 
 .btn {
@@ -78,7 +78,7 @@ body {
 .btn-green {
   color: var(--green);
 
-  border-color: var(--green);;
+  border-color: var(--green);
 }
 
 .py-60 {
@@ -147,7 +147,7 @@ body {
 
   padding: 5px 20px 5px 20px;
 
-  background-color: var(--white);;
+  background-color: var(--white);
 }
 
 .header-fixed {
@@ -184,7 +184,8 @@ body {
 }
 
 .main {
-  color: var(--light);;
+  color: var(--light);
+
   font-weight: bold;
 
   background: url('../images/banner.png') 40% 40% no-repeat;
@@ -201,11 +202,12 @@ body {
 
   padding: 20px;
 
-  border: 2px solid var(--green);;
+  border: 2px solid var(--green);
 }
 
 .form-legend {
-  color: var(--green);;
+  color: var(--green);
+
   font-weight: bold;
   font-size: 22px;
 }
@@ -242,7 +244,7 @@ body {
 .footer-list-item {
   margin-left: 35px;
 
-  color: var(--light);;
+  color: var(--light);
 
   list-style-type: disc;
 }
